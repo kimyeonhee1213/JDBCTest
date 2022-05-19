@@ -16,7 +16,7 @@ public class SampleDelete {
             Class.forName(RDB_DRIVE);
             Connection conn = DriverManager.getConnection(URL, USER, PWD);
             Statement smt = conn.createStatement();
-            String sql = "DELETE FROM students WHERE student_id='C0053'";
+            String sql = "DELETE FROM students WHERE student_id='C0055'";
             int rowCnt = smt.executeUpdate(sql);
 
             System.out.println(rowCnt + "레코드가 삭제되었습니다.");
